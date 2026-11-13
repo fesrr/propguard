@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "propguard"
+version = "1.0.0"
+description = "Zero-dependency prop-firm risk compliance engine, drawdown auditor, and Monte Carlo simulator."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "fesrr"}]
+keywords = ["trading", "risk-management", "prop-firm", "backtesting", "monte-carlo"]
+
+[project.scripts]
+propguard = "propguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
